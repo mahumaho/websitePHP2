@@ -13,13 +13,9 @@
 </header>
 
 <body>
-    <ul class="menu">
-        <li><a href="index.html">Home</a></li>
-        <li><a href="page2-dogfood.html">Dog Food</a></li>
-        <li><a href="page3-catfood.html">Cat Food</a></li>
-        <li><a href="page4-birdfood.html">Bird Food</a></li>
-        <li><a href="page5-fishfood.html">Fish Food</a></li>
-    </ul>
+ <?php
+    include 'header.php';
+    ?>
     <div class="body"><p>Information about pet food information about pet food information about pet food 
         information about pet food information about pet food information about pet food information about pet food 
         information about pet food information about pet food information about pet food information about pet food 
@@ -49,10 +45,9 @@
     </div>
 
     <div id="cart"></div>
-</body>
-<div class="footer">
-    <footer>Max Howe 2020 &copy</footer>
-</div>
+    <?php
+    include 'footer.php';
+    ?>
 </body>
 
 </html>
