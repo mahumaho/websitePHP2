@@ -32,7 +32,7 @@
         ?>
                     <div class="product">
         <img src="images/<?php echo $product->image;?>" alt="dog food tin" style="width:100%" width="200px" height="200px">
-        <h1>dog food</h1>
+        <h1><?php echo $product->name;?></h1>
         <p class="price"><?php echo $product->price;?></p>
         <p>Yum yum yum yum yum yum yum yum yum yum yum.</p>
     </div>
