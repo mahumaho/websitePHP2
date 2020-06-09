@@ -1,0 +1,138 @@
+body {
+    height: 100%;
+    margin: 0;
+    width: 100%;
+}
+
+html {
+    font-family: sans-serif;
+}
+
+header {
+    display: flex;
+    background-color: lightgrey;
+    padding: 15px;
+    width: 100%;
+}
+
+footer {
+    left: 0;
+    bottom: 0;
+    display: flex;
+    background-color: rgb(19, 155, 197);
+    padding: 15px;
+}
+
+.menu {
+    margin: 0;
+    background-color: rgb(54, 54, 165);
+    border: 5px;
+}
+
+
+.product {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    max-width: 300px;
+    margin: auto;
+    text-align: center;
+    font-family: arial;
+    background-color: rgb(110, 39, 180);
+}
+
+.price {
+    color: grey;
+    font-size: 22px;
+}
+
+.product button {
+    border: none;
+    outline: 0;
+    padding: 12px;
+    color: white;
+    background-color: rgb(235, 112, 31);
+    text-align: center;
+    cursor: pointer;
+    width: 100%;
+    font-size: 18px;
+}
+
+li {
+
+    display: inline;
+    padding-left: 20px;
+    text-align: center;
+    padding-right: 20px;
+    color: white;
+}
+
+li a:visited {
+    color: white;
+}
+
+li a:hover {
+    color: green;
+    font-weight: bold;
+}
+
+li a:active {
+    background-color: royalblue;
+}
+
+ul {
+    text-align: center;
+    overflow: hidden;
+}
+
+#invoice {
+    display: none;
+    position: absolute;
+    top: 100px;
+    width: 500px;
+    background-color: white;
+}
+
+/*-------------------------------------Animation starts here*/
+@keyframes headertextanimation {
+    0% {
+        background-color: red;
+        left: 0px;
+        top: 0px;
+        font-size: 20px
+    }
+
+    25% {
+        background-color: yellow;
+        left: 100px;
+        top: 0px;
+        font-size: 40px
+    }
+
+    50% {
+        background-color: blue;
+        left: 50px;
+        top: 50px;
+        font-size: 40px
+    }
+
+    75% {
+        background-color: green;
+        left: 10px;
+        top: 50px;
+        font-size: 40px
+    }
+
+    100% {
+        background-color: red;
+        left: 0px;
+        top: 0px;
+        font-size: 20px
+    }
+}
+
+.headertext {
+    animation-name: headertextanimation;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+}
+
+/*-------------------------------------Animation ends here*/

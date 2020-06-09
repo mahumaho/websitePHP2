@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Home</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="javascript/JS.js"></script>
+</head>
+<header>
+    <p class="headertext">Pet Food Shop <br><p>click me (once)----------></p></p>
+    <img src="images/bird.png" width="150" height="150" id="animal-image" onclick="moveImage()">
+</header>
+
+<body>
+    <ul class="menu">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="page2-dogfood.html">Dog Food</a></li>
+        <li><a href="page3-catfood.html">Cat Food</a></li>
+        <li><a href="page4-birdfood.html">Bird Food</a></li>
+        <li><a href="page5-fishfood.html">Fish Food</a></li>
+    </ul>
+    <div class="body"><p>Information about pet food information about pet food information about pet food 
+        information about pet food information about pet food information about pet food information about pet food 
+        information about pet food information about pet food information about pet food information about pet food 
+        information about pet food information about pet food information about pet food information about pet food 
+    </p></div>
+
+    <!--W3S test starts-->
+    <div class="product">
+        <img src="images/birdfoodtin.png"" alt=" cat food tin" style="width:100%" width="200px" height="200px">
+        <h1>bird food</h1>
+        <p class="price">$12.50</p>
+        <p>Yum yum yum yum yum yum yum yum yum yum yum.</p>
+    </div>
+    </div>
+    <!--W3S ends-->
+
+    <div>
+        <button onclick="addToCart('Cat food', 12.5, 1)">Add to cart</button>
+    </div>
+
+    <div id="cart"></div>
+
+    <button onclick="viewInvoice()">Check out</button>
+
+    <div id="invoice">
+        <div id="items"></div>
+        <button onclick="closeInvoice()">Close</button>
+    </div>
+
+    <div id="cart"></div>
+</body>
+<div class="footer">
+    <footer>Max Howe 2020 &copy</footer>
+</div>
+</body>
+
+</html>
